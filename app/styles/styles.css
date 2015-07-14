@@ -1,0 +1,139 @@
+
+/*==================     Main Styles     ======================*/
+body {
+    background: #10223a;
+    color: #808289;
+    font: 400 16px/29px "Ubuntu", sans-serif;
+    -webkit-text-size-adjust: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*=======================================================
+                       Components
+=========================================================*/
+/*==================     Brand     ======================*/
+img + .brand_name {
+    margin-top: 30px;
+}
+.brand_logo{
+    display: inline;
+    height: 0;
+    text-align: right;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #CCCCCC;
+}
+.brand_slogan {
+    /*display: block;*/
+    display: inline-block;
+    position: relative;
+    height: 0;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.brand_contact{
+    display: block;
+    height: 0;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 8px; background-image: ;
+}
+
+.brand_slogan, .brand_contact {
+    margin-bottom: 100px;
+}
+
+/*==================      splashimg     ======================*/
+.splashimg {
+    padding-top: 117px;
+    padding-bottom: 170px;
+    /*background: #333333;*/
+    /*margin-bottom: 30px;*/
+    background-image: url("/images/splashimg-rings-flat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+.splashimg_inner{
+    background: url( /images/splashimg-sub-image.png );
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 90%;
+    background-position-y: 50%;
+}
+.splashimg_header {
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-bottom: 10%;
+}
+.splashimg_footer {
+    position: relative;
+    float: none;
+    text-align: center;
+}
+.splashimg h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    margin-bottom: 10%;
+    text-transform: none;
+    /*text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);*/
+}
+.splashimg h2 span {
+    text-transform: none;
+}
+.splashimg h3 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 6.6px;
+}
+.splashimg h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .splashimg h2 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .splashimg_inner {
+        background: url( /images/splashimg-sub-image.png );
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position-x: 90%;
+        background-position-y: 50%;
+    }
+}
+@media (max-width: 479px) {
+    .splashimg {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .splashimg h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .splashimg h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
