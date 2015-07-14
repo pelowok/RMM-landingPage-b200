@@ -16,10 +16,10 @@ img {
                        Components
 =========================================================*/
 /*==================     Brand     ======================*/
-img + .brand_name {
+img + .brand-name {
     margin-top: 30px;
 }
-.brand_logo{
+.brand-logo{
     display: inline;
     height: 0;
     text-align: right;
@@ -29,32 +29,25 @@ img + .brand_name {
     letter-spacing: 0px;
     color: #CCCCCC;
 }
-.brand_slogan {
-    /*display: block;*/
-    display: inline-block;
-    position: relative;
-    height: 0;
-    text-align: left;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 300;
+.brand-slogan {
     letter-spacing: 2px;
+    text-transform: none;
 }
-.brand_contact{
+.brand-contact{
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.brand-slogan, .brand-contact {
+    margin-bottom: 100px;
     display: block;
     height: 0;
     text-align: center;
     font-size: 12px;
-    text-transform: uppercase;
     font-weight: 300;
-    letter-spacing: 0px;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-right: 8px; background-image: ;
-}
-
-.brand_slogan, .brand_contact {
-    margin-bottom: 100px;
+    padding-right: 8px;
 }
 
 /*==================      splashimg     ======================*/
@@ -69,20 +62,20 @@ img + .brand_name {
     background-position: center;
     color: #FFFFFF;
 }
-.splashimg_inner{
+.splashimg-inner{
     background: url( /images/splashimg-sub-image.png );
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 90%;
     background-position-y: 50%;
 }
-.splashimg_header {
+.splashimg-header {
     position: relative;
     float: left;
     text-align: left;
     margin-bottom: 10%;
 }
-.splashimg_footer {
+.splashimg-footer {
     position: relative;
     float: none;
     text-align: center;
@@ -115,7 +108,7 @@ img + .brand_name {
         font-size: 32px;
         line-height: 45px;
     }
-    .splashimg_inner {
+    .splashimg-inner {
         background: url( /images/splashimg-sub-image.png );
         background-repeat: no-repeat;
         background-size: 50%;
@@ -136,4 +129,32 @@ img + .brand_name {
         font-size: 14px;
         line-height: 18px;
     }
+}
+
+/*=========================== QUAL-FORM BLOCK ===================================*/
+.qual-form-block{
+    display: inline-block;
+    margin: 14px;
+    color: #FFFFFF;
+}
+.qual-form-block .well-lg{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/*======================== QUALIFIER BLOCK  ===================================*/
+.qualifier-block {
+    align-content: center;
+}
+.qualifier-block button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    white-space: normal;
+}
+
+
+/*=========================== FORM BLOCK =============================================*/
+.main-form-block{
+
 }
