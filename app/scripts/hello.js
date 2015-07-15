@@ -1,8 +1,33 @@
+//
+///* jshint white:false */
+//
+//(function() {
+//  'use strict';
+//  console.log('\'Allo from CoffeeScript!');
+//
+//}).call(this);
 
-/* jshint white:false */
+'use strict';
 
-(function() {
-  'use strict';
-  console.log('\'Allo from CoffeeScript!');
+//  file created 2015-07-15
+//    by mynameiszak.com
+//    <zak@mynameiszak.com>
 
-}).call(this);
+var MNIZ = MNIZ || {};
+
+MNIZ.Hello = (function($) {
+
+  var pub = {};
+
+  var helloFunction = function (b) {
+    MNIZ.Main.mainFunction(b);
+  };
+
+  pub.helloFunction = helloFunction;
+
+  return pub;
+
+})(jQuery.noConflict());
+
+
+document.onload(MNIZ.Hello.helloFunction('o hai'));
