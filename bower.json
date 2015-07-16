@@ -6,6 +6,7 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.9.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "video.js": "~4.12.11"
+  }
 }
-
