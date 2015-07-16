@@ -216,7 +216,7 @@ img + .brand-name {
 
 /*=========================== QUAL-FORM BLOCK ===================================*/
 .qual-form-block{
-    display: inline-block;
+    display: block;
     margin: 14px;
     color: #FFFFFF;
 }
@@ -241,15 +241,23 @@ img + .brand-name {
 .main-form-block{
 
 }
+.has-border {
+    background-color: transparent;
+    opacity: 0.5;
+    border-color: transparent;
+    border-radius: 8px;
+    border-width: thick;
+}
 
 /*==================     Subscribe Form     ======================*/
 .subscribe-form {
     position: relative;
     display: inline-block;
     width: 480px;
+    text-align: center;
 }
-.subscribe-form label {
-    display: inline-block;
+.subscribe-form label, input {
+    display: block;
     max-width: 410px;
     width: 100%;
     position: relative;
@@ -265,30 +273,10 @@ img + .brand-name {
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
-.subscribe-form input {
-    outline: none;
-    background-color: transparent;
-    border: none;
-    -webkit-appearance: none;
-    border-radius: 0;
-    vertical-align: baseline;
-    box-shadow: none;
-    color: #c1c1c1;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 19px;
-    font-weight: 400;
-    font-family: "Ubuntu", sans-serif;
-    line-height: 22px;
-    text-transform: uppercase;
-    height: 22px;
-}
 .subscribe-form a[data-type="submit"] {
     padding: 12px 20px;
     font-size: 19px;
-    line-height: 24px;
+    line-height: 21px;
 }
 .subscribe-form label + a[data-type="submit"] {
     margin-top: 10px;
