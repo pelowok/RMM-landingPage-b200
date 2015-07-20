@@ -35,7 +35,8 @@
                         formerly GFI Max
                     </div>
                     <div class="col-xs-6 brand-contact">
-                        contact-us-info
+                        <button id="btnContact" class="btn-nude" onclick="toggleContactInfo()" value="Contact Us">Contact Us</button>
+
                     </div>
                 </div>
             </div>
@@ -80,25 +81,26 @@
 
                     <div class="row">
 
-                        <h2 class="text-center">
+                        <h2 class="text-center"><u>
                             Step 1: What are your needs?
-                        </h2>
+                            </u></h2>
 
                     </div>
 
                     <div class="row">
 
                         <div class="col-xs-6">
-                            <button type="button" class="btn btn-warning btn-block btn-lg inactive center-block"
-                                    onclick="toggleVisibility('step1hideme1'); return false;">
-                                Managing Multiple<br>Client Networks
-                            </button>
+                            <img class="img-responsive center-block img-max-3" alt="MAX Focus logo"
+                                 src="images/MAXfocus_white.png" />
 
                             <div id="step1hideme1" class="well-sm">
                                 <!--<div id="step1hideme1" style="display:none;">-->
 
-                                <img class="img-responsive center-block" alt="MAX Focus logo"
-                                     src="http://lorempixel.com/300/80/" />
+                                <button type="button" class="btn btn-warning btn-block btn-lg inactive center-block"
+                                        onclick="toggleVisibility('step1hideme1'); return false;">
+                                    Managing Multiple<br>Client Networks
+                                </button>
+
                                 <ul>
                                     <li>
                                         Lorem ipsum dolor sit amet
@@ -119,16 +121,15 @@
                         </div>
 
                         <div class="col-xs-6">
-                            <button type="button" class="btn btn-warning btn-block btn-lg inactive center-block"
-                                    onclick="toggleVisibility('step1hideme2'); return false;">
-                                Managing My Own<br>IT Network
-                            </button>
+                            <img class="img-responsive center-block img-max-3" alt="ControlNow logo"
+                                 src="images/ControlNow_white.png" />
+
 
                             <div id="step1hideme2" class="well-sm">
-                                <!--<div id="step1hideme2" style="display:none;">-->
-
-                                <img class="img-responsive center-block" alt="ControlNow logo"
-                                     src="http://lorempixel.com/300/80/">
+                                <button type="button" class="btn btn-warning btn-block btn-lg inactive center-block"
+                                        onclick="toggleVisibility('step1hideme2'); return false;">
+                                    Managing My Own<br>IT Network
+                                </button>
                                 <ul>
                                     <li>
                                         Nulla volutpat aliquam velit

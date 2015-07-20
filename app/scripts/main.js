@@ -38,6 +38,25 @@
 //
 //})(jQuery.noConflict());
 
+function toggleContactInfo()
+{
+    var btn = document.getElementById('btnContact');
+
+    var foo = function(cb){
+        cb = 'US';
+        return cb;
+    }
+
+    var bar = function(cb){
+        cb = '(123)123-1234';
+        return cb;
+    }
+
+    btn.innerHTML = foo() + ': ' + bar();
+
+
+}
+
 function toggleVisibility(id) {
 
     var e = document.getElementById(id);

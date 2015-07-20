@@ -15,6 +15,43 @@ img {
     height: auto;
 }
 
+.btn-nude {
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: hand;
+    border-radius: 0;
+}
+
+.btn-nude,
+.btn-nude:active,
+.btn-nude[disabled],
+fieldset[disabled] .btn-nude {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-nude,
+.btn-nude:hover,
+.btn-nude:focus,
+.btn-nude:active {
+    border-color: transparent;
+}
+
+.btn-nude:hover,
+.btn-nude:focus {
+    color: #cccccc;
+    background-color: transparent;
+}
+
+.btn-nude[disabled]:hover,
+fieldset[disabled] .btn-nude:hover,
+.btn-nude[disabled]:focus,
+fieldset[disabled] .btn-nude:focus {
+    color: #999999;
+    text-decoration: none;
+}
+
 
 /*================= CUSTOM DECORATION ====================*/
 
@@ -99,7 +136,7 @@ img {
     display: block;
     position: fixed;
     top: 0;
-    height: 125px;
+    height: 100px;
     width: 100%;
     overflow: hidden;
     z-index: 1000;
@@ -118,7 +155,6 @@ img + .brand-name {
 }
 .brand-logo{
     display: block;
-    /*height: 0;*/
     text-align: left;
 }
 .brand-slogan {
@@ -134,36 +170,16 @@ img + .brand-name {
     text-align: right;
 }
 @media (min-width: 870px) {
-    /*.brand-contact {*/
-        /*margin-bottom: 60px;*/
-        /*display: block;*/
-        /*height: 0;*/
-        /*text-align: center;*/
-        /*font-size: 12px;*/
-        /*font-weight: 300;*/
-        /*/!*padding-top: 5%;*!/*/
-        /*padding-bottom: 5%;*/
-        /*padding-right: 8px;*/
-    /*},*/
     .brand-logo img.logo{
-        max-width: 439px;
+        max-width: 240px;
     }
 }
 @media (max-width: 869px) {
-    /*.brand-contact {*/
-        /*margin-bottom: 100px;*/
-        /*display: block;*/
-        /*height: 0;*/
-        /*text-align: center;*/
-        /*font-size: 12px;*/
-        /*font-weight: 300;*/
-        /*/!*padding-top: 5%;*!/*/
-        /*padding-bottom: 5%;*/
-        /*padding-right: 8px;*/
-    /*},*/
     .brand-logo img.logo{
-        min-width: 25%;
+        /*min-width: 25%;*/
+        max-width: 240px;
     }
+
 }
 
 
@@ -214,6 +230,10 @@ img + .brand-name {
     line-height: 24px;
     letter-spacing: 2px;
 }
+.img-max-3 {
+    height: 3em;
+    margin-top: 1.5em;
+}
 @media (min-width: 480px) and (max-width: 767px) {
     .splashimg h2 {
         font-size: 32px;
@@ -225,6 +245,9 @@ img + .brand-name {
         background-size: 50%;
         background-position-x: 90%;
         background-position-y: 50%;
+    }
+    .img-max-3 {
+        height: 1.5em;
     }
 }
 @media (max-width: 479px) {
