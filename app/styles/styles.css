@@ -5,15 +5,20 @@ body {
     color: #384c6d;
     font: 400 16px/29px "Ubuntu", sans-serif;
     -webkit-text-size-adjust: none;
+    min-width:480px; /* minimun width of 480px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:480px;             /* As IE ignores !important it will set width as 480px; */
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+
 /*================= CUSTOM DECORATION ====================*/
 
-.bg-blue {
+.bg-blue-primary, .bg-blue {
     background: #0079c1;
     color: #FFFFFF;
 }
@@ -78,64 +83,94 @@ img {
          opacity: 0.6;
     }
 
-
+.no-pad {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+.no-margin {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.absolute-75 {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 125px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
 /*=======================================================
                        Components
 =========================================================*/
+
 /*==================     Brand     ======================*/
 img + .brand-name {
     margin-top: 30px;
 }
+.brand-logo img.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 .brand-logo{
-    display: inline;
-    height: 0;
-    text-align: right;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 0px;
-    color: #CCCCCC;
+    display: block;
+    /*height: 0;*/
+    text-align: left;
 }
 .brand-slogan {
+    padding-left: 2em;
     letter-spacing: 2px;
     text-transform: none;
+    text-align: left;
 }
 .brand-contact{
-    letter-spacing: 0px;
-    text-transform: uppercase;
+    padding-right: 2em;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-align: right;
 }
-@media (min-width: 600px) {
-    .brand-slogan, .brand-contact {
-        margin-bottom: 60px;
-        display: block;
-        height: 0;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 300;
-        /*padding-top: 5%;*/
-        padding-bottom: 5%;
-        padding-right: 8px;
+@media (min-width: 870px) {
+    /*.brand-contact {*/
+        /*margin-bottom: 60px;*/
+        /*display: block;*/
+        /*height: 0;*/
+        /*text-align: center;*/
+        /*font-size: 12px;*/
+        /*font-weight: 300;*/
+        /*/!*padding-top: 5%;*!/*/
+        /*padding-bottom: 5%;*/
+        /*padding-right: 8px;*/
+    /*},*/
+    .brand-logo img.logo{
+        max-width: 439px;
     }
 }
-@media (max-width: 599px) {
-    .brand-slogan, .brand-contact {
-        margin-bottom: 100px;
-        display: block;
-        height: 0;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 300;
-        /*padding-top: 5%;*/
-        padding-bottom: 5%;
-        padding-right: 8px;
+@media (max-width: 869px) {
+    /*.brand-contact {*/
+        /*margin-bottom: 100px;*/
+        /*display: block;*/
+        /*height: 0;*/
+        /*text-align: center;*/
+        /*font-size: 12px;*/
+        /*font-weight: 300;*/
+        /*/!*padding-top: 5%;*!/*/
+        /*padding-bottom: 5%;*/
+        /*padding-right: 8px;*/
+    /*},*/
+    .brand-logo img.logo{
+        min-width: 25%;
     }
 }
 
 
 /*==================      splashimg     ======================*/
 .splashimg {
-    /*padding-top: 117px;*/
-    padding-bottom: 170px;
+    /*padding-top: 40px;*/
+    padding-bottom: 40px;
     /*background: #333333;*/
     /*margin-bottom: 30px;*/
     background-image: url("http://lorempixel.com/1080/1080");
@@ -143,13 +178,6 @@ img + .brand-name {
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
-}
-.splashimg-inner{
-    background: url( /images/splashimg-sub-image.png );
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x: 90%;
-    background-position-y: 50%;
 }
 .splashimg-header {
     padding-top: 117px;
