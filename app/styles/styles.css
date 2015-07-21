@@ -189,7 +189,7 @@ img + .brand-name {
     padding-bottom: 40px;
     /*background: #333333;*/
     /*margin-bottom: 30px;*/
-    background-image: url("http://lorempixel.com/1080/1080");
+    background-image: url(/images/splashimg-rings-flat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
