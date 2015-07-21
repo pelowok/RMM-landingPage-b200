@@ -57,6 +57,11 @@ function toggleContactInfo()
 
 }
 
+function radioClickCheck(id){
+    var inp = document.getElementById(id);
+
+}
+
 function toggleVisibility(id) {
 
     var e = document.getElementById(id);
